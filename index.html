@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("titulo").onclick=function () {
+                document.getElementById("p1").className="rojo";
+                document.getElementById("p2").className="naranja";
+                document.getElementById("p3").className="amarillo";
+                document.getElementById("p4").className="verde";
+                document.getElementById("p5").className="azul_claro";
+                document.getElementById("p6").className="azul";
+                document.getElementById("p7").className="morado";
+            };
+        })
+    </script>
+
+    <h3 id="titulo" style="cursor: pointer;">Arc de Sant Martí</h3>
+    <p id="p1" onmouseover="this.style.color='red'" onmouseout="this.style.color='black'" >roig, red, rojo</p>
+    <p id="p2" onmouseover="this.style.color='orange'" onmouseout="this.style.color='black'" >taronja, oranje, naranja</p>
+    <p id="p3" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='black'" >groc, yellow, amarillo</p>
+    <p id="p4" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'" >verd, green, verde</p>
+    <p id="p5" onmouseover="this.style.color='lightblue'" onmouseout="this.style.color='black'" >blau clar, light blue, azul claro</p>
+    <p id="p6" onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'" >blau, blue, azul</p>
+    <p id="p7" onmouseover="this.style.color='purple'" onmouseout="this.style.color='black'" >morat, purple, morado</p>
+</body>
+</html>
